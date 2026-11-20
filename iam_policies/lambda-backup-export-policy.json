@@ -5,13 +5,13 @@
       "Sid": "ReadDemoUsers",
       "Effect": "Allow",
       "Action": "dynamodb:Scan",
-      "Resource": "arn:aws:dynamodb:REGION:ACCOUNT_ID:table/jsonplaceholder-users"
+      "Resource": "arn:aws:lambda:ap-south-1:888425713126:function:export-dynamodb-to-s3"
     },
     {
       "Sid": "WriteTimestampedJsonBackups",
       "Effect": "Allow",
       "Action": "s3:PutObject",
-      "Resource": "arn:aws:s3:::YOUR_UNIQUE_BUCKET_NAME/backups/*"
+      "Resource": "arn:aws:lambda:ap-south-1:888425713126:function:export-dynamodb-to-s3"
     }
   ]
 }
